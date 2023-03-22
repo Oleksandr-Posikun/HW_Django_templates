@@ -1,0 +1,10 @@
+{% load static %}
+
+<header class="logo">
+    <img class="logo-bmw" src="{% static 'img/bmw_logo.png' %}" alt="">
+    <img class="logo-m-power" src="{% static 'img/m_power_logo.png' %}" alt="">
+    <div class="search-model">
+        <input name="m" placeholder="🔎 найти модель" onclick="this.placeholder=''"
+               onblur="if(this.value==''){this.placeholder='🔎 найти модель';}">
+    </div>
+</header>

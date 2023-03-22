@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_main.css' %}">
+    <title>Title</title>
+</head>
+<body>
+    {% include "includes/header.html" %}
+    <div class="container">
+        <div class="menu">
+            <ul>
+                {% include "includes/menu.html" %}
+            </ul>
+        </div>
+        <div class="content">
+            <main>
+            {% block main %}
+            {%endblock%}
+            </main>
+        </div>
+    </div>
+
+<script src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

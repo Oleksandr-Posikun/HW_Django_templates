@@ -1,0 +1,9 @@
+{% for i in news %}
+<div class="news">
+    <img class = "img-news" src="{{ i.image }}">
+    <div class="text">
+        <h3 class="title-text">{{ i.title}}</h3>
+        <p class="item-text">{{ i.description}}</p>
+    </div>
+</div>
+{% endfor %}
